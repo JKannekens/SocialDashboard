@@ -1,7 +1,7 @@
 import { CtxOrReq } from 'next-auth/client/_utils';
 import { getProviders, getCsrfToken, signIn } from 'next-auth/react';
 import { InferGetServerSidePropsType } from 'next/types';
-import { getProviderIcon } from '../utils/getProviderIcon';
+import { getProviderIcon } from '../components/ProviderIcon';
 
 export const Signin = ({
   providers,
