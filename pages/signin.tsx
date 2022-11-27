@@ -111,7 +111,11 @@ export const Signin = ({
                     <div key={provider.name}>
                       <button
                         type="button"
-                        onClick={() => signIn(provider.id)}
+                        onClick={() =>
+                          signIn(provider.id, {
+                            callbackUrl: window.location.origin,
+                          })
+                        }
                         className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
                       >
                         <span className="sr-only">
